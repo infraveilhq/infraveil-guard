@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "infraveil-guard"
+version = "0.1.0"
+description = "Gate your AI agent's destructive actions behind human approval, with a tamper-evident local audit log."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-or-later"
+authors = [{ name = "Infraveil Corporation" }]
+keywords = ["mcp", "ai-agents", "safety", "guardrails", "claude-code", "cursor", "devops", "security", "audit"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Security",
+  "Topic :: System :: Systems Administration",
+]
+dependencies = [
+  "mcp>=1.2.0",
+]
+
+[project.urls]
+Homepage = "https://infraveil.com"
+Source = "https://github.com/infraveilhq/infraveil-guard"
+
+[project.scripts]
+infraveil-guard = "infraveil_guard.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["infraveil_guard"]
