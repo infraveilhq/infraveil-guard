@@ -132,6 +132,13 @@ home, checks a license, or needs a server to keep working. It does one job and
 owns it: stop the catastrophic actions and wait for a human. Yours to fork and
 run forever.
 
+## Related
+
+Part of Infraveil's open-source tools for running backends you own:
+
+- [infraveil-lockin](https://github.com/infraveilhq/infraveil-lockin) — scan a repo and score how locked in your app is to one cloud provider (`npx infraveil-lockin`).
+- [infraveil](https://github.com/infraveilhq/infraveil) — a policy DSL you enforce in CI, plus offline audit-ledger and signature verification.
+
 ## License
 
 AGPL-3.0-or-later. Use it, fork it, read every line. If you run a modified version
