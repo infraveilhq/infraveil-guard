@@ -3,7 +3,7 @@
   "name": "io.github.infraveilhq/agent-guard",
   "title": "Infraveil Agent Guard",
   "description": "Gate an AI agent's destructive actions behind human approval, with a tamper-evident log.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "url": "https://github.com/infraveilhq/infraveil-guard",
     "source": "github"
@@ -13,7 +13,7 @@
     {
       "registryType": "pypi",
       "identifier": "infraveil-guard",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": { "type": "stdio" },
       "environmentVariables": [
         { "name": "INFRAVEIL_GUARD_THRESHOLD", "description": "Severity at/above which an action is gated: none|low|medium|high|critical (default high).", "isRequired": false },

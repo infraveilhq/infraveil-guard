@@ -124,11 +124,13 @@ tamper-evident local log. It's the smallest honest version of "a human approves
 before anything irreversible happens."
 
 It is **not** a sandbox. It works because your agent is told to route actions
-through `guard_action` — a cooperative guardrail, not an unbypassable jail. If you
-need a gate the agent *cannot* skip — because the agent runs *inside* the governed
-runtime, with central audit, least-privilege scoping, and one-click rollback
-across a whole fleet — that's the full **[Infraveil](https://infraveil.com)**
-control plane. This is the doorway; that's the house.
+through `guard_action` — a cooperative guardrail, not an unbypassable jail. That
+is a deliberate trade: in exchange you get something you can install in one line,
+read end to end in an afternoon, and run with **no account, no network, and no
+dependency on anyone else's infrastructure — including ours.** Nothing here calls
+home, checks a license, or needs a server to keep working. It does one job and
+owns it: stop the catastrophic actions and wait for a human. Yours to fork and
+run forever.
 
 ## License
 

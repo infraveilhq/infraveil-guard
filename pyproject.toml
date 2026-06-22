@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "infraveil-guard"
-version = "0.1.0"
+version = "0.1.1"
 description = "Gate your AI agent's destructive actions behind human approval, with a tamper-evident local audit log."
 readme = "README.md"
 requires-python = ">=3.10"
